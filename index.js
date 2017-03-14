@@ -59,20 +59,7 @@ function createResponsePayload(requestBody) {
 
     var target = splitted[0];
     var remainingText = splitted.slice(1).join(' ');
-    remainingText = 'Someone said "' + remainingText + '"';
-
-    if (target === ':here') {
-        return {
-            channel: requestBody.channel_id,
-            text: remainingText
-        };
-    }
-
-    return {
-        channel: target,
-        text: remainingText
-    };
-}
+    remainingText = "A team member asks/says" + "\n" + "> " + "*" + remainingText + "*";
 
 app.post('/', function(req, response) {
     var payloadOption = createResponsePayload(req.body);
