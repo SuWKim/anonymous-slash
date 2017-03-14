@@ -30,8 +30,7 @@ function getUsageHelp(commandName) {
 function getFullHelp(commandName) {
     var text =
         'Allows to send anonymous messages to channels.\n' +
-        'The most convenient and safe way is to open up a conversation with slackbot in Slack and type the commands there, so that nobody detects that you are typing and you don\'t accidentally reveal yourself by typing an invalid command.\n' +
-        'Messages and authors are not stored, and the sources are available at <https://github.com/TargetProcess/slack-anonymous>.\n' +
+        'The most convenient way is to open up a conversation with slackbot in Slack and type the commands there, so that nobody detects that you are typing and you don\'t accidentally reveal yourself by typing an invalid command.\n' +
         '\n' +
         getUsageHelp(commandName);
 
